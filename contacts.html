@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Page Contacts</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <h3>Taburétt Made</h3>
@@ -27,25 +28,21 @@
                 <fieldset>
                     <legend>Напишите нам:</legend>
                 <!--<label for="name">Ваше имя:</label>-->
-                <input id="name"
+                <input class="contacts_input" id="name"
                        type="text"
-                       style="width: 15%"
                        placeholder="Ваше имя:"><br>
                 <!--<label for="mail">Ваш e-mail:</label>-->
-                <input id="mail"
+                <input class="contacts_input" id="mail"
                        type="email"
-                       placeholder="mail@example.com"
-                       style="width: 15%"><br>
+                       placeholder="mail@example.com"><br>
                <!-- <label for="subject">Тема сообщения:</label><br>-->
-                <input id="subject"
+                <input class="contacts_input" id="subject"
                        required type="text"
-                       style="width: 15%"
                        placeholder="Тема сообщения:"><br>
                <!-- <label for="message">Пишите сюда:</label>-->
-                <textarea id="message"
+                <textarea class="contacts_input" id="message"
                           cols="1"
                           rows="5"
-                          style="width: 30%"
                           placeholder="Пишите сюда:"></textarea><br>
                 <input type="submit">
                 </fieldset>

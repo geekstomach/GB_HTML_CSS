@@ -1,0 +1,63 @@
+/*где лучше хранить файл style.css?*/
+body {
+    background:#f8f8f8;
+    }
+ul {
+    list-style-type: none;
+    }
+/* не пойму, можно ли было както объединить верхний и нижний селоектор */
+ul a {
+    font-size: 16px;
+    font-style: italic;
+    color: coral;
+    }
+/*--------goods--------*/
+.goods_description{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    }
+.goods_p_one{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    }
+.goods_p_two{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.goods_list{
+    font-size: 24px;
+    font-style: oblique;
+    color: seagreen;
+    list-style-image: url("mark_for_list.png"); /*разобраться с путями*/
+    margin-left: 300px;
+}
+/*--------Contacts--------*/
+.contacts_input {
+    border-radius: 10px;
+    width: 15%;
+    height: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+
+}
+.contacts_input:focus {
+    background-color: sandybrown;
+    font-weight: bolder;
+}
+textarea.contacts_input{
+    border-radius: 10px;
+    width: 30%;
+    height: 100px;
+    font-size: 32px;
+}
+textarea.contacts_input:focus{
+    background-color: sandybrown;
+    font-weight: bolder;
+}
