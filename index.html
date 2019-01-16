@@ -1,29 +1,54 @@
-<!DOCTYPE <!DOCTYPE html><!-- DOCTYPE  Пишем заголовок большими буквами -->
-<html>
+<!DOCTYPE html> <!-- DOCTYPE  Пишем заголовок большими буквами -->
+<html lang="ru">
     <head>
-        <meta charset="utf-8" />
-        <meta name="descripion" content="Купить табуретки в интернет-магазине Taburétt Made"/>
+        <meta charset="utf-8">
+        <meta name="descripion" content="Купить табуретки в интернет-магазине Taburétt Made">
+        <link rel="stylesheet" href="css/style.css">
         <title>Page Title</title>
     </head>
     <body>
-        <a href="index.html">Главная</a>
-        <a href="history.html">История</a>
-        <hr>
-        <h1>Taburétt Made. Описание товара </h1>
+        <div class="header">
+           <h3>Taburétt Made</h3>
+           <div id="logo">
+                <img src="images/logo.jpg"
+                     alt=""
+                     title="Taburétt"
+                     >
+           </div>
+           <div id="menu">
+               <ul>
+                    <li>
+                        <a class="menu_link" href="index.html">Главная</a> <!--В теге ul могут быть только теги li -->
+                    </li>
+                    <li>
+                        <a class="menu_link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="history.html">История</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+           </div>
+            <hr>
+        </div>
+        <h1>Главная </h1>
+
+        Приветствуем вас в нашем уютном интернет-магазине рукодельных табуреток Taburétt Made!)
+
+
         <div class="photo">
             <p>
-                <img src="images/Taburétt.jpg" alt="" /></p>
-            <p class="caption">
-                Taburétt</p>
+                <img src="images/Taburétt.jpg"
+                     alt=""
+                     title="Taburétt"
+                     width="300">
+            </p>
+            <p class="caption">Taburétt</p>
         </div>
-        <h2>Характеристики товара</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ratione commodi aliquam! 
-            Fugit mollitia repudiandae id itaque maiores nisi hic saepe accusantium quidem corrupti
-            cumque earum, dolor illo culpa neque!</p>
-        <h3>Подробное описание товара</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ratione commodi aliquam! 
-                Fugit mollitia repudiandae id itaque maiores nisi hic saepe accusantium quidem corrupti
-                cumque earum, dolor illo culpa neque!</p>
+
         <hr>
+        <div class="footer">&emsp; &copy; &emsp; Все права защищены</div>
     </body>
-</html>>
+</html>
