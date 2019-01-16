@@ -7,22 +7,32 @@
         <title>Page Title</title>
     </head>
     <body>
-        <h3>Taburétt Made</h3>
-        <ul>
-            <li>
-                <a href="index.html">Главная</a> <!--В теге ul могут быть только теги li -->
-            </li>
-            <li>
-                <a href="catalog.html">Каталог</a>
-            </li>
-            <li>
-                <a href="history.html">История</a>
-            </li>
-            <li>
-                <a href="contacts.html">Контакты</a>
-            </li>
-        </ul>
-        <hr>
+        <div class="header">
+           <h3>Taburétt Made</h3>
+           <div id="logo">
+                <img src="images/logo.jpg"
+                     alt=""
+                     title="Taburétt"
+                     >
+           </div>
+           <div id="menu">
+               <ul>
+                    <li>
+                        <a class="menu_link" href="index.html">Главная</a> <!--В теге ul могут быть только теги li -->
+                    </li>
+                    <li>
+                        <a class="menu_link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="history.html">История</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+           </div>
+            <hr>
+        </div>
         <h1>Главная </h1>
 
         Приветствуем вас в нашем уютном интернет-магазине рукодельных табуреток Taburétt Made!)
@@ -39,8 +49,6 @@
         </div>
 
         <hr>
-        <footer>
-        &copy; &emsp; Все права защищены
-        </footer>
+        <div class="footer">&emsp; &copy; &emsp; Все права защищены</div>
     </body>
 </html>

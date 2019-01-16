@@ -6,23 +6,32 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h3>Taburétt Made</h3>
-        <ul>
-            <li>
-                <a href="index.html">Главная</a> <!--В теге ul могут быть только теги li -->
-            </li>
-            <li>
-                <a href="catalog.html">Каталог</a>
-            </li>
-            <li>
-                <a href="history.html">История</a>
-            </li>
-            <li>
-                <a href="contacts.html">Контакты</a>
-            </li>
-        </ul>
-        <hr>
-
+        <div class="header">
+            <h3>Taburétt Made</h3>
+            <div id="logo">
+                <img src="images/logo.jpg"
+                     alt=""
+                     title="Taburétt"
+                >
+            </div>
+            <div id="menu">
+                <ul>
+                    <li>
+                        <a class="menu_link" href="index.html">Главная</a> <!--В теге ul могут быть только теги li -->
+                    </li>
+                    <li>
+                        <a class="menu_link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="history.html">История</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </div>
             <h1>Контакты </h1>
             <form action="contacts.html" method="post">
                 <fieldset>
@@ -50,13 +59,11 @@
 
         <hr>
         <h1>Адрес: </h1>
-        <p><strong>Телефон:</strong> +7800200600</p>
+        <p><strong>Телефон:</strong> +78002000600</p>
         <p><strong>Адрес:</strong> Россия, Ямало-Ненецкий автономный округ, Лабытнанги</p>
         <p><strong>e-mail:</strong> mail@example.com</p>
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9038c6a4d5a4ae547f8aed7618014ef87efad926a2f7929ca2df6a90b62d734b&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
         <hr>
-        <footer>
-            &copy; &emsp; Все права защищены
-        </footer>
+        <div class="footer">&copy; &emsp; Все права защищены</div>
     </body>
 </html>

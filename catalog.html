@@ -6,22 +6,32 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h3>Taburétt Made</h3>
-        <ul class="menu">
-            <li>
-                <a href="index.html">Главная</a> <!--В теге ul могут быть только теги li -->
-            </li>
-            <li>
-                <a href="catalog.html">Каталог</a>
-            </li>
-            <li>
-                <a href="history.html">История</a>
-            </li>
-            <li>
-                <a href="contacts.html">Контакты</a>
-            </li>
-        </ul>
-        <hr>
+        <div class="header">
+            <h3>Taburétt Made</h3>
+            <div id="logo">
+                <img src="images/logo.jpg"
+                     alt=""
+                     title="Taburétt"
+                >
+            </div>
+            <div id="menu">
+                <ul>
+                    <li>
+                        <a class="menu_link" href="index.html">Главная</a> <!--В теге ul могут быть только теги li -->
+                    </li>
+                    <li>
+                        <a class="menu_link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="history.html">История</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </div>
         <h1>Каталог </h1>
         <div class="image">
             <p>
@@ -48,8 +58,6 @@
             </p>
         </div>
         <hr>
-        <footer>
-            &copy; &emsp; Все права защищены
-        </footer>
+        <div class="footer">&copy; &emsp; Все права защищены</div>
     </body>
 </html>

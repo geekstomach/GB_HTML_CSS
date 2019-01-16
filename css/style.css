@@ -1,16 +1,39 @@
 /*где лучше хранить файл style.css?*/
 body {
+
     background:#f8f8f8;
     }
-ul {
-    list-style-type: none;
-    }
+
 /* не пойму, можно ли было както объединить верхний и нижний селоектор */
-ul a {
+
+/*--------header--------*/
+.header div {
+   display: inline-block;
+   height: 120px;
+}
+#logo img{ /* двигается при наведении на ссылки, никак не получается зафиксировать*/
+
+    height: 70px;
+    border-radius: 30px;
+    border: 5px black solid;
+    margin: -5px;
+}
+.header ul {
+    list-style-type: none;
+}
+
+.menu_link{
     font-size: 16px;
     font-style: italic;
-    color: coral;
-    }
+    color: black;
+}
+.menu_link:hover {
+    background-color: black;
+    /*font-size: 32px; /*хотел чтобы шрифт увеличивался при наведении на ссылки, никак не получается зафиксировать логотип, все время прыганет*/
+    font-size: 16px;
+    text-decoration: underline;
+    color: white;
+}
 /*--------goods--------*/
 .goods_description{
     color: black;
@@ -35,8 +58,42 @@ ul a {
     font-size: 24px;
     font-style: oblique;
     color: seagreen;
-    list-style-image: url("mark_for_list.png"); /*разобраться с путями*/
+    list-style-image: url("../images/mark_for_list.png");
     margin-left: 300px;
+}
+.goods_table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.goods_table td, tr{/*tr здесь почемуто не сработал*/
+    border: 1px solid black;
+}
+#goods_table_title{
+    height: 40px;
+    background-color: #707070;
+    font-size: 30px;
+}
+#goods_img{
+    width:300px;
+
+}
+#goods_img img{
+    border: 5px solid black;
+    margin: -5px;
+    width:300px;
+}
+#goods_img:hover img{
+
+    border: 5px solid transparent;
+    margin: -5px;
+
+}
+.goods p:first-letter{
+    color: orangered;
+    font-size: 30px;
+}
+.goods p:first-line{
+   font-weight: bold;
 }
 /*--------Contacts--------*/
 .contacts_input {
@@ -45,7 +102,7 @@ ul a {
     height: 20px;
     margin-bottom: 10px;
     font-size: 16px;
-
+    text-transform: capitalize;
 }
 .contacts_input:focus {
     background-color: sandybrown;
@@ -60,4 +117,13 @@ textarea.contacts_input{
 textarea.contacts_input:focus{
     background-color: sandybrown;
     font-weight: bolder;
+}
+/*--------footer--------*/
+.footer{
+    background-color: #707070;
+    height: 150px;
+    position: relative;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
 }

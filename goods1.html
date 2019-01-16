@@ -5,31 +5,41 @@
         <title>Товар</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
-        <h3>Taburétt Made</h3>
-        <ul>
-            <li>
-                <a href="index.html">Главная</a> <!--В теге ul могут быть только теги li -->
-            </li>
-            <li>
-                <a href="catalog.html">Каталог</a>
-            </li>
-            <li>
-                <a href="history.html">История</a>
-            </li>
-            <li>
-                <a href="contacts.html">Контакты</a>
-            </li>
-        </ul>
-        <hr>
+    <body class="goods">
+        <div class="header">
+            <h3>Taburétt Made</h3>
+            <div id="logo">
+                <img src="images/logo.jpg"
+                     alt=""
+                     title="Taburétt"
+                >
+            </div>
+            <div id="menu">
+                <ul>
+                    <li>
+                        <a class="menu_link" href="index.html">Главная</a> <!--В теге ul могут быть только теги li -->
+                    </li>
+                    <li>
+                        <a class="menu_link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="history.html">История</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </div>
         <h1 class="goods_description">Товар номер 1</h1>
+        <div id="goods_img">
         <a href="images/IMG1.jpg" target="_blank">
-            <img src="images/IMG1.jpg"
+            <img  src="images/IMG1.jpg"
                  alt="Товар номер 1"
-                 title="Красивая табуреточка"
-                 width="300">
+                 title="Красивая табуреточка">
         </a>
-
+        </div>
         <h2 class="goods_description">Характеристики товара</h2>
         <p class="goods_p_one">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ratione commodi aliquam!
@@ -42,6 +52,47 @@
             <li><b>Характеристика 2:</b>Деревянный</li>
             <li><b>Характеристика 3:</b>Цветной</li>
         </ul>
+        <h2 class="goods_description">Таблица свойств товара</h2>
+        <table class="goods_table">
+            <caption id="goods_table_title">Технические свойства</caption>
+            <thead>
+            <tr>
+                <th>Ржавар</th>
+                <th>Гла</th>
+                <th>Эарладо</th>
+                <th>Бар</th>
+                <th>Туор</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>поезд</td>
+                <td>использование</td>
+                <td>квартира</td>
+                <td rowspan="2">нет</td>
+                <td>обстоятельство</td>
+            </tr>
+            <tr>
+                <td>одинокий</td>
+                <td>невыносимый</td>
+                <td>тяжелый</td>
+                <td>сталинский</td>
+            </tr>
+            <tr>
+                <td>начаться</td>
+                <td>уходить</td>
+                <td>придумать</td>
+                <td>произвести</td>
+                <td>одуматься</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td colspan="3">6</td>
+                <td>5</td>
+            </tr>
+            </tbody>
+        </table>
+
         <h3 class="goods_description">Подробное описание товара</h3>
         <p class="goods_p_two">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ratione commodi aliquam!
@@ -49,8 +100,6 @@
             cumque earum, dolor illo culpa neque!
         </p>
         <hr>
-        <footer>
-            &copy; &emsp; Все права защищены
-        </footer>
+        <div class="footer">&copy; &emsp; Все права защищены</div>
     </body>
 </html>
