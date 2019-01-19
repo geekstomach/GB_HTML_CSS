@@ -6,13 +6,13 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="goods">
+    <div class="container">
         <div class="header">
             <h3>Taburétt Made</h3>
             <div id="logo">
                 <img src="images/logo.jpg"
                      alt=""
-                     title="Taburétt"
-                >
+                     title="Taburétt">
             </div>
             <div id="menu">
                 <ul>
@@ -32,26 +32,33 @@
             </div>
             <hr>
         </div>
-        <h1 class="goods_description">Товар номер 1</h1>
-        <div id="goods_img">
-        <a href="images/IMG1.jpg" target="_blank">
-            <img  src="images/IMG1.jpg"
-                 alt="Товар номер 1"
-                 title="Красивая табуреточка">
-        </a>
-        </div>
-        <h2 class="goods_description">Характеристики товара</h2>
-        <p class="goods_p_one">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ratione commodi aliquam!
-            Fugit mollitia repudiandae id itaque maiores nisi hic saepe accusantium quidem corrupti
-            cumque earum, dolor illo culpa neque!
+        <div class="goods_description_wrap">
+            <div class="goods_description_img">
+                <h1 class="goods_description">Товар номер 1</h1>
+                <a href="images/IMG1.jpg" target="_blank">
+                    <img src="images/IMG1.jpg"
+                         alt="Товар номер 1"
+                         title="Красивая табуреточка">
+                </a>
+            </div>
+            <div class="goods_description_txt">
+                <h2 class="goods_description">Характеристики товара</h2>
+                <p class="goods_p_one">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ratione commodi aliquam!
+                    Fugit mollitia repudiandae id itaque maiores nisi hic saepe accusantium quidem corrupti
+                    cumque earum, dolor illo culpa neque!
 
-        </p>
-        <ul class="goods_list">
-            <li><b>Характеристика 1:</b>Твердый</li>
-            <li><b>Характеристика 2:</b>Деревянный</li>
-            <li><b>Характеристика 3:</b>Цветной</li>
-        </ul>
+                </p>
+                <ul class="goods_list">
+                    <li><b>Характеристика 1:</b>Твердый</li>
+                    <li><b>Характеристика 2:</b>Деревянный</li>
+                    <li><b>Характеристика 3:</b>Цветной</li>
+                </ul>
+                <button id="bye">Купить)</button>
+            </div>
+
+        </div>
+
         <h2 class="goods_description">Таблица свойств товара</h2>
         <table class="goods_table">
             <caption id="goods_table_title">Технические свойства</caption>
@@ -101,5 +108,6 @@
         </p>
         <hr>
         <div class="footer">&copy; &emsp; Все права защищены</div>
+    </div>
     </body>
 </html>
