@@ -5,14 +5,13 @@
         <title>Page Contacts</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <div class="container">
         <div class="header">
             <h3>Taburétt Made</h3>
             <div id="logo">
                 <img src="images/logo.jpg"
                      alt=""
-                     title="Taburétt"
-                >
+                     title="Taburétt">
             </div>
             <div id="menu">
                 <ul>
@@ -36,24 +35,30 @@
             <form action="contacts.html" method="post">
                 <fieldset>
                     <legend>Напишите нам:</legend>
-                <!--<label for="name">Ваше имя:</label>-->
-                <input class="contacts_input" id="name"
-                       type="text"
-                       placeholder="Ваше имя:"><br>
-                <!--<label for="mail">Ваш e-mail:</label>-->
-                <input class="contacts_input" id="mail"
-                       type="email"
-                       placeholder="mail@example.com"><br>
-               <!-- <label for="subject">Тема сообщения:</label><br>-->
-                <input class="contacts_input" id="subject"
-                       required type="text"
-                       placeholder="Тема сообщения:"><br>
-               <!-- <label for="message">Пишите сюда:</label>-->
-                <textarea class="contacts_input" id="message"
-                          cols="1"
-                          rows="5"
-                          placeholder="Пишите сюда:"></textarea><br>
-                <input type="submit">
+                    <input class="contacts_input"
+                           id="name"
+                           type="text"
+                           placeholder="Ваше имя:">
+                    <br>
+                    <input class="contacts_input"
+                           id="mail"
+                           type="email"
+                           placeholder="mail@example.com">
+                    <br>
+                    <input class="contacts_input"
+                           id="subject"
+                           required type="text"
+                           placeholder="Тема сообщения:">
+                    <br>
+                    <textarea class="contacts_input"
+                              id="message"
+                              cols="1"
+                              rows="5"
+                              placeholder="Пишите сюда:">
+
+                    </textarea>
+                    <br>
+                    <input type="submit">
                 </fieldset>
             </form>
 
@@ -65,5 +70,6 @@
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9038c6a4d5a4ae547f8aed7618014ef87efad926a2f7929ca2df6a90b62d734b&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
         <hr>
         <div class="footer">&copy; &emsp; Все права защищены</div>
+    </div>
     </body>
 </html>

@@ -1,99 +1,187 @@
 /*где лучше хранить файл style.css?*/
 body {
 
-    background:#f8f8f8;
-    }
-
-/* не пойму, можно ли было както объединить верхний и нижний селоектор */
-
-/*--------header--------*/
-.header div {
-   display: inline-block;
-   height: 120px;
+    background: #f8f8f8;
 }
-#logo img{ /* двигается при наведении на ссылки, никак не получается зафиксировать*/
+/*--------container--------*/
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+/*--------header--------*/
+.header{
+    /*height: 150px;*/ /*решил закрывать хэдер с использованием after*/
+    background: url("../images/header_bg.jpg")  repeat-x;
+    background-size: cover;/*а как сделать так чтобы картинка не растягивалаясь ?*/
+}
 
+#logo img { /* двигается при наведении на ссылки, никак не получается зафиксировать*/
+    float: left;
     height: 70px;
     border-radius: 30px;
-    border: 5px black solid;
-    margin: -5px;
-}
-.header ul {
-    list-style-type: none;
+    border: 5px white solid;
+    margin: 0 0 20px 20px; /*отодвигаю логотип от левого края, и не только*/
 }
 
-.menu_link{
-    font-size: 16px;
+.header ul {
+    list-style-type: none;
+    margin: 10px 0 0 20px;
+}
+#menu{
+    float: right;/*ох и намучался я с этим, так и не осталось ощущения что разобрался(*/
+}
+#menu li{
+    display: inline-block; /*сначала пихал этот блок в .menu_link но так почемуто не сработало, непонимаю почему
+    устал бороться подсмотрел у вас(*/
+}
+.menu_link {
+    font-size: 28px;
     font-style: italic;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+.menu_link:hover {
+    background-color: white;
+    font-size: 28px;
+    text-decoration: underline;
     color: black;
 }
-.menu_link:hover {
-    background-color: black;
-    /*font-size: 32px; /*хотел чтобы шрифт увеличивался при наведении на ссылки, никак не получается зафиксировать логотип, все время прыганет*/
-    font-size: 16px;
-    text-decoration: underline;
+.header hr{
+    clear: both;
+
+}
+.header h3{
+    text-align: center;
     color: white;
+    font-size: 34px;
+    border: 5px white solid;
+    background-color: black;
+
+
+}
+.header:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+/*--------catalog--------*/
+.catalog_items img{
+    width: 300px;
+}
+.catalog_items{
+    float: left;
+    width: 300px;
+    margin: 20px;
+    outline: 2px solid black;
+    text-align: center;
+}
+.catalog_list:after{
+    content: '';
+    clear: both;
+    display: block;
 }
 /*--------goods--------*/
-.goods_description{
+.goods_description_wrap{
+    display: inline-block;
+}
+.goods_description_img{
+    float: left;
+    width: 35%;
+}
+.goods_description_img img{
+    width: 100%;
+}
+.goods_description_txt{
+    float: left;
+    margin-left: 10px;
+    width: 60%;
+}
+.goods_description {
     color: black;
     font-size: 18px;
     font-weight: 400;
     background-color: #eaeaea;
-    }
-.goods_p_one{
+}
+
+.goods_p_one {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
-    }
-.goods_p_two{
+}
+
+.goods_p_two {
     color: #484343;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
 }
-.goods_list{
+
+.goods_list {
     font-size: 24px;
     font-style: oblique;
     color: seagreen;
     list-style-image: url("../images/mark_for_list.png");
-    margin-left: 300px;
+    margin-left: 100px;
 }
-.goods_table{
+
+.goods_table {
     border: 2px solid black;
     border-collapse: collapse;
 }
-.goods_table td, tr{/*tr здесь почемуто не сработал*/
+
+.goods_table td, tr { /*tr здесь почемуто не сработал*/
     border: 1px solid black;
 }
-#goods_table_title{
+
+#goods_table_title {
     height: 40px;
     background-color: #707070;
     font-size: 30px;
 }
-#goods_img{
-    width:300px;
 
+#goods_img {
+    width: 300px;
 }
-#goods_img img{
+
+#goods_img img {
     border: 5px solid black;
     margin: -5px;
-    width:300px;
+    width: 300px;
 }
-#goods_img:hover img{
 
+#goods_img:hover img {
     border: 5px solid transparent;
     margin: -5px;
-
 }
-.goods p:first-letter{
+
+.goods p:first-letter {
     color: orangered;
     font-size: 30px;
 }
-.goods p:first-line{
-   font-weight: bold;
+
+.goods p:first-line {
+    font-weight: bold;
+}
+
+#bye{
+
+    width: 150px;
+    float: right;
+    color: #fff;
+    background: #FFA500;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #FF8247;
+}
+#bye:hover {
+    background: #FF6347;
+}
+#bye:active {
+    background: violet;
 }
 /*--------Contacts--------*/
 .contacts_input {
@@ -104,26 +192,29 @@ body {
     font-size: 16px;
     text-transform: capitalize;
 }
+
 .contacts_input:focus {
     background-color: sandybrown;
     font-weight: bolder;
 }
-textarea.contacts_input{
+
+textarea.contacts_input {
     border-radius: 10px;
     width: 30%;
     height: 100px;
     font-size: 32px;
 }
-textarea.contacts_input:focus{
+
+textarea.contacts_input:focus {
     background-color: sandybrown;
     font-weight: bolder;
 }
+
 /*--------footer--------*/
-.footer{
+
+.footer {
     background-color: #707070;
     height: 150px;
-    position: relative;
-    left: 0;
-    bottom: -10px;
-    width: 100%;
+    text-align: right;
+    padding: 20px 20px 0 0; /* оттодвигаем используя внутренний отступ*/
 }
